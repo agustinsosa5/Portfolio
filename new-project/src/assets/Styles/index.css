@@ -1,0 +1,14 @@
+
+:root {
+    --color-back:#000;
+    --color-nav: aliceblue;
+    --color-hover-nav: #FF0000;
+    --color-circle : #f00;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;        
+}

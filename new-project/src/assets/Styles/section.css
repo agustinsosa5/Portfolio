@@ -1,0 +1,45 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-back);
+  position: relative;
+}
+
+.circle {
+  width: 300px;
+  height: 200px;  
+  position: absolute;
+  background-color:var(--color-circle);
+  border-radius: 50%;
+  top: -50px;
+  box-shadow: 0 0 100px rgb(223, 96, 96);
+  filter: blur(140px);
+}
+.container-section {
+  display: flex;
+  background-color: aqua;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+}
+.section-elements {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: red;
+  width: 100%; 
+  padding: 20px; 
+}
+
+/* Estilos para el botón dentro de .section-elements */
+.section-elements button {
+  background-color: blue; 
+  color: white; 
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px; 
+}

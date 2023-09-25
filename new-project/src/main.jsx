@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import Header from './components/UI/header'
 import Section from './components/UI/section'
 import About from './components/UI/aboutMe'
+import Form from './components/Forms/Form'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -10,5 +11,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Header />
     <Section />
     <About />
+    <Form />    
   </React.StrictMode>,
 )
