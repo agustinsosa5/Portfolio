@@ -1,9 +1,14 @@
 .container-aboutme {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
   background-color: blueviolet;
   height: 100vh;
   padding: 10px;
+  background-image: url('../images/background-aboutme.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-text)
 }
 
 .container-elements {
@@ -11,9 +16,10 @@
   width: 40%;
   background-color: blue;
   padding: 10px;  
+  
 }
 
 .container-elements h3 {
-    text-align: center;    
+  text-align: center;
 }
 

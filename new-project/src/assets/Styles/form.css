@@ -1,0 +1,62 @@
+.form-container {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;  
+}
+
+.image-mail {
+  background-image: url('../images/background-aboutme.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  width: 400px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 480px;
+  background-color: red;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  
+  margin-top: 8px;
+  margin-bottom: 5px;
+  height: 35px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+textarea {
+  resize: none;
+  border-radius: 5px;
+  min-width: 300px;
+  min-height: 100px;
+  margin-top: 10px;
+  padding: 5px 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 10px;
+  height: 35px;
+  width: 180px;
+  border-radius: 15px;
+}

@@ -9,8 +9,7 @@ import Form from './components/Forms/Form'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Header />
-    <Section />
-    <About />
+    <Section />   
     <Form />    
   </React.StrictMode>,
 )

@@ -14,11 +14,11 @@ export default function Header() {
       </a>
       <nav className="nav">
         <ul className="ul-nav">
-          <li>
+         {/*  <li>
             <a href="" className="nav-option">
-              About Me
+              Sobre Mi
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="" className="nav-option">
               Portfolio
@@ -26,12 +26,12 @@ export default function Header() {
           </li>
           <li>
             <a href="" className="nav-option">
-              Education
+              Habilidades
             </a>
           </li>
           <li>
             <a href="" className="nav-option">
-              Concact
+              Contacto
             </a>
           </li>
         </ul>
