@@ -18,6 +18,19 @@
   backdrop-filter: blur(20px);
 }
 
+.logo {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: textBlink 3s infinite;
+}
+
 .container-img {
   height: auto;
   display: flex;
@@ -48,6 +61,7 @@
   text-decoration: underline;
   text-underline-offset: 8px;
   padding-bottom: 10px;
+  transition: .1s ease-in;
 }
 
 li {
@@ -71,4 +85,20 @@ li {
 
 .icon:hover {
   color: var(--color-hover-nav);
+  transition: .1s ease-in;
+}
+
+@keyframes textBlink {
+  0% {
+    color: #D8E9A8;
+  }
+  33% {
+    color: #4E9F3D;
+  }
+  66% {
+    color: #4E9F3D;
+  }
+  100% {
+    color: #D8E9A8;
+  }
 }

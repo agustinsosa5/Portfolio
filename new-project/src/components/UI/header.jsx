@@ -9,8 +9,8 @@ import {
 export default function Header() {
   return (
     <header className="header">
-      <a href="" className="container-img">
-        <img src={logo} alt="Logo" className="logo"/>
+      <a href="" className="logo">
+       Agustin.
       </a>
       <nav className="nav">
         <ul className="ul-nav">

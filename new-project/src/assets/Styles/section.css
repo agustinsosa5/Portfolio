@@ -1,45 +1,127 @@
 .section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   background-color: var(--color-back);
   position: relative;
+  padding-top: 30px;
+}
+
+.title {
+  padding-top: 150px;
+  text-align: center;
+}
+
+.title-section {
+  font-size: 7rem;
+  color: var(--color-text);
+  font-weight: bold;
+  animation: effect 0.8s forwards;
+}
+
+.p-section {
+  animation: fadein 2s forwards;
+}
+
+span {
+  color: #4e9f3d;
+}
+
+p {
+  color: #fff;
+  letter-spacing: 0.5px;
 }
 
 .circle {
   width: 300px;
-  height: 200px;  
+  height: 200px;
   position: absolute;
-  background-color:var(--color-circle);
+  background-color: var(--color-circle);
   border-radius: 50%;
   top: -50px;
-  box-shadow: 0 0 100px rgb(223, 96, 96);
+  box-shadow: 0 0 100px var(--shadow);
   filter: blur(140px);
 }
 .container-section {
+  border-radius: 15px;
   display: flex;
-  background-color: aqua;
-  margin-top: 20px;
+  background-color: transparent;
+  box-shadow: 0 0 20px var(--shadow);
+  margin-top: 50px;
   width: 80%;
   max-width: 1200px;
   padding: 20px;
 }
 .section-elements {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  background-color: red;
-  width: 100%; 
-  padding: 20px; 
+  background-color: var(--color-back);
+  width: 100%;
+  padding: 20px;
 }
 
-/* Estilos para el botón dentro de .section-elements */
-.section-elements button {
-  background-color: blue; 
-  color: white; 
-  border: none;
-  padding: 10px 20px;
-  margin-top: 10px; 
+h2 {
+  font-size: 3rem;
+  color: aliceblue;
+  padding-bottom: 4px;
 }
+
+.photo {
+  background-image: url(../images/Agust-foto.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  filter: opacity(0.8);
+}
+
+.section-elements a {
+  border: solid 2px aliceblue;
+  padding: 6px 20px;
+  margin-top: 15px;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: larger;
+  font-weight: bold;
+  transition: color .2s ease-in, border-color .2s ease-in;
+}
+
+.section-elements a:hover {  
+  color: #4e9f3d;  
+  border-color: #4e9f3d;
+}
+
+
+
+/* Efecto para Titulo */
+@keyframes effect {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Efecto para Parrafo section */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
