@@ -1,4 +1,3 @@
-import logo from "../../assets/images/logo6.png";
 import "../../assets/Styles/header.css";
 import {
   AiOutlineInstagram,
@@ -6,31 +5,26 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 
-export default function Header() {
+export default function header() {
   return (
     <header className="header">
       <a href="" className="logo">
-       Agustin.
+        Agustín.
       </a>
       <nav className="nav">
         <ul className="ul-nav">
-         {/*  <li>
-            <a href="" className="nav-option">
-              Sobre Mi
-            </a>
-          </li> */}
           <li>
             <a href="" className="nav-option">
               Portfolio
             </a>
           </li>
           <li>
-            <a href="" className="nav-option">
+            <a href="#habilidades" className="nav-option">
               Habilidades
             </a>
           </li>
           <li>
-            <a href="" className="nav-option">
+            <a href="#contact" className="nav-option">
               Contacto
             </a>
           </li>

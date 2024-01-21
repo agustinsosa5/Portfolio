@@ -15,7 +15,7 @@ export default function section() {
       </div>
       <div className="container-section">
         <div className="section-elements">
-          <h2>Agustin Sosa</h2>
+          <h2>Agustín Sosa</h2>
           <p>Web Developer</p>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -23,7 +23,7 @@ export default function section() {
             modi veritatis sint quos suscipit
           </p>
 
-          <a href="" className="draw-border">Ver mas</a>
+          <a href="#habilidades">Ver mas</a>
         </div>
         <div className="photo"></div>
       </div>

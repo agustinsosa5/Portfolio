@@ -1,0 +1,28 @@
+.container-skills {  
+  text-align: center;  
+}
+
+.skills-grid {
+  padding-bottom: 40px;  
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  row-gap: 50px;
+}
+
+.skills-grid img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  display: block;
+  
+}
+
+.tecnologia-title {
+  font-size: 8rem;
+  background: linear-gradient(to bottom, #4e9f3d 60%, black 40%);
+  background-clip: text;
+  color: transparent;
+  transform: translateY(-60%);  
+}

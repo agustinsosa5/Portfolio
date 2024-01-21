@@ -1,12 +1,13 @@
 .section {
-  display: flex;
+  display: flex;  
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: auto;
   background-color: var(--color-back);
   position: relative;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 10%;
 }
 
 .title {
@@ -44,7 +45,7 @@ p {
   box-shadow: 0 0 100px var(--shadow);
   filter: blur(140px);
 }
-.container-section {
+.container-section {  
   border-radius: 15px;
   display: flex;
   background-color: transparent;
@@ -55,7 +56,7 @@ p {
   padding: 20px;
 }
 .section-elements {
-  display: flex;
+  display: flex;   
   flex-direction: column;
   justify-content: center;
   align-items: start;
@@ -67,7 +68,8 @@ p {
 h2 {
   font-size: 3rem;
   color: aliceblue;
-  padding-bottom: 4px;
+  padding-bottom: 4px;  
+  
 }
 
 .photo {
@@ -81,17 +83,18 @@ h2 {
   filter: opacity(0.8);
 }
 
-.section-elements a {
+.section-elements a {  
   border: solid 2px aliceblue;
   padding: 6px 20px;
   margin-top: 15px;
   height: 40px;
   width: 150px;
+  line-height: 20px;
   text-align: center;
   text-decoration: none;
   color: aliceblue;
   font-size: larger;
-  font-weight: bold;
+  font-weight: normal;
   transition: color .2s ease-in, border-color .2s ease-in;
 }
 

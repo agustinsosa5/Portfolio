@@ -23,7 +23,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-container" id="contact">
       <div className="image-mail"></div>
       <form onSubmit={handleSubmit} className="form">
         <h1>Contactar</h1>
