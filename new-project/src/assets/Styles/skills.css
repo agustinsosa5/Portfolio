@@ -21,8 +21,8 @@
 
 .tecnologia-title {
   font-size: 8rem;
-  background: linear-gradient(to bottom, #4e9f3d 60%, black 40%);
+  background: linear-gradient(to bottom, #ffffff 60%, black 40%);
   background-clip: text;
   color: transparent;
-  transform: translateY(-60%);  
+  transform: translateY(-60.5%);  
 }

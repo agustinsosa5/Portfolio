@@ -23,7 +23,7 @@ export default function section() {
             modi veritatis sint quos suscipit
           </p>
 
-          <a href="#habilidades">Ver mas</a>
+          <a href="./src/assets/Document/Curriculum Agustin Sosa.pdf" target="_blank">Ver CV</a>
         </div>
         <div className="photo"></div>
       </div>

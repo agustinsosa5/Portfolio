@@ -14,7 +14,7 @@ export default function header() {
       <nav className="nav">
         <ul className="ul-nav">
           <li>
-            <a href="" className="nav-option">
+            <a href="#project-title" className="nav-option">
               Portfolio
             </a>
           </li>

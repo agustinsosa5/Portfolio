@@ -26,7 +26,7 @@ function ContactForm() {
     <div className="form-container" id="contact">
       <div className="image-mail"></div>
       <form onSubmit={handleSubmit} className="form">
-        <h1>Contactar</h1>
+        <h1>CONTACTAR</h1>
         <div className="container-input">
           <input
             type="text"
@@ -35,7 +35,8 @@ function ContactForm() {
             onChange={handleChange}
             required
           />
-          <label>Nombre</label>
+          <label htmlFor="name">Nombre</label>
+          
         </div>
 
         <div className="container-input">
@@ -46,7 +47,7 @@ function ContactForm() {
             onChange={handleChange}
             required
           />
-          <label className="label">Correo</label>
+          <label className="label" htmlFor="email">Correo</label>
         </div>
 
         <div className="container-input">
@@ -57,7 +58,7 @@ function ContactForm() {
             onChange={handleChange}
             required
           />
-          <label>Asunto</label>
+          <label htmlFor="subject">Asunto</label>
         </div>
 
         <div className="container-textarea">
