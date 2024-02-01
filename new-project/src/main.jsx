@@ -8,12 +8,14 @@ import ProjectsList from './components/UI/projects'
 
 
 
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Header />    
     <Section />   
     <ProjectsList />
     <Skills />
-    <Form />    
+    <Form />      
   </React.StrictMode>,
 )

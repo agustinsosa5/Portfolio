@@ -1,9 +1,9 @@
-.container-skills {  
-  text-align: center;  
+.container-skills {
+  text-align: center;
 }
 
 .skills-grid {
-  padding-bottom: 40px;  
+  padding-bottom: 40px;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
@@ -16,13 +16,23 @@
   max-width: 80px;
   height: auto;
   display: block;
-  
 }
 
 .tecnologia-title {
   font-size: 8rem;
-  background: linear-gradient(to bottom, #ffffff 60%, black 40%);
+  background: linear-gradient(to bottom, #ffffff 50%, black 50%);
   background-clip: text;
   color: transparent;
-  transform: translateY(-60.5%);  
+  transform: translateY(-49.8%);
+}
+
+@media (max-width: 720px) {
+  .container-skills{
+    max-width: 100vw;
+  }
+
+  .tecnologia-title {
+    font-size: 4rem;
+    text-align: center;
+  }
 }

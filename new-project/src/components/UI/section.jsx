@@ -1,4 +1,5 @@
 import "../../assets/Styles/section.css";
+import "../../assets/Styles/index.css";
 
 export default function section() {
   return (
@@ -6,26 +7,37 @@ export default function section() {
       <div className="circle"></div>
       <div className="title">
         <h1 className="title-section">
-          Web Developer<span>.</span>
+          Web Developer
+          <span className="punto">.</span>
         </h1>
         <p className="p-section">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
-          deserunt!
+          Ser mejor que ayer y continuar avanzando!
         </p>
       </div>
       <div className="container-section">
+        <div className="container-photo">
+          <img
+            src="./src/assets/images/Agust-foto.png"
+            alt="avatar"
+            className="photo"
+          />
+        </div>
         <div className="section-elements">
           <h2>Agustín Sosa</h2>
-          <p>Web Developer</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Dignissimos voluptates, illo quasi architecto rem praesentium eaque
-            modi veritatis sint quos suscipit
+            Mi objetivo cada día es aprender, practicar y compartir a contigo mi
+            experiencia. Te invito a ver a mi curriculum y los proyectos en los
+            que he trabajado. Puedes contactarme si lo deseas, Gracias por tu
+            visita.
           </p>
 
-          <a href="./src/assets/Document/Curriculum Agustin Sosa.pdf" target="_blank">Ver CV</a>
+          <a
+            href="./src/assets/Document/Curriculum Agustin Sosa.pdf"
+            target="_blank"
+          >
+            Ver CV
+          </a>
         </div>
-        <div className="photo"></div>
       </div>
     </section>
   );

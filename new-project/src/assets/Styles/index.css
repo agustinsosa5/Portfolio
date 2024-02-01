@@ -1,18 +1,22 @@
 :root {
   --color-back: #000;
   --color-nav: aliceblue;
-  --color-hover-nav: #4E9F3D;
-  --color-circle: #4E9F3D;
+  --color-hover-nav: #4e9f3d;
+  --color-circle: #4e9f3d;
   --color-text: #fff;
-  --color-text-sec : #4E9F3D;
-  --shadow: #4E9F3D;
+  --color-text-sec: #4e9f3d;
+  --shadow: #4e9f3d;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "system-ui";
+  font-family: "system-ui";  
+}
+
+body{
+  overflow-x: hidden;
 }
 
 html {

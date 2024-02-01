@@ -1,4 +1,5 @@
 import "../../assets/Styles/projects.css";
+import "../../assets/Styles/index.css";
 
 export default function ProjectsList() {
   return (

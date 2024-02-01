@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import "../../assets/Styles/index.css";
+
 import "../../assets/Styles/form.css";
 
 function ContactForm() {
@@ -9,21 +11,55 @@ function ContactForm() {
     message: "",
   });
 
+  const alertMsg = useRef(null);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prevData) => ({
+      ...prevData,
       [name]: value,
-    });
+    }));
   };
 
-  const handleSubmit = (e) => {
+  const show = () => (alertMsg.current.style.display = "block");
+  const hide = () => (alertMsg.current.style.display = "none");
+
+  const closeAlert = () => {
+    setTimeout(() => {
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+      hide();
+    }, 3000);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aquí enviarías los datos al backend para que se encargue de enviar el correo.
+
+    show();
+    closeAlert();
+
+    try {
+      const response = await fetch("http://localhost:3001/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+    } catch (error) {
+      throw "No se logra enviar mensaje: " + error;
+    }
   };
 
   return (
     <div className="form-container" id="contact">
+      <div className="alert" ref={alertMsg}>
+        <span className="mensaje spans">Mensaje enviado!</span>
+      </div>
       <div className="image-mail"></div>
       <form onSubmit={handleSubmit} className="form">
         <h1>CONTACTAR</h1>
@@ -36,7 +72,6 @@ function ContactForm() {
             required
           />
           <label htmlFor="name">Nombre</label>
-          
         </div>
 
         <div className="container-input">
@@ -47,7 +82,9 @@ function ContactForm() {
             onChange={handleChange}
             required
           />
-          <label className="label" htmlFor="email">Correo</label>
+          <label className="label" htmlFor="email">
+            Correo
+          </label>
         </div>
 
         <div className="container-input">

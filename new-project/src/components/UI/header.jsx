@@ -1,18 +1,30 @@
+import React, { useState } from "react";
 import "../../assets/Styles/header.css";
+import "../../assets/Styles/index.css";
 import {
   AiOutlineInstagram,
   AiFillLinkedin,
   AiFillGithub,
+  AiOutlineBars, // Agregamos el nuevo ícono aquí
 } from "react-icons/ai";
 
-export default function header() {
+export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header">
       <a href="" className="logo">
         Agustín.
       </a>
-      <nav className="nav">
-        <ul className="ul-nav">
+      <nav className={`nav ${isMenuOpen ? "nav-open" : ""}`}>
+      <li className="menu-icon" onClick={toggleMenu}>
+          <AiOutlineBars />
+        </li>
+        <ul className={`ul-nav ${isMenuOpen ? "ul-nav-open" : ""}`}>
           <li>
             <a href="#project-title" className="nav-option">
               Portfolio
@@ -45,7 +57,7 @@ export default function header() {
           <a href="https://github.com/agustinsosa5" className="icon">
             <AiFillGithub />
           </a>
-        </li>
+        </li>        
       </ul>
     </header>
   );

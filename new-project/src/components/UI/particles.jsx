@@ -31,7 +31,7 @@ const Particles = () => {
     });
   }, []);
 
-  return <div id="particles-js" style={{ position: 'absolute', width: '100%', height: '100%', zIndex: -1 }}></div>;
+  return <div id="particles-js" style={{ position: 'absolute', width: '100vw', height: '100%', zIndex: -1 }}></div>;
 };
 
 export default Particles;

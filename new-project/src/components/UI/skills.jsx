@@ -1,5 +1,6 @@
 import "../../assets/Styles/skills.css";
 import Particles from "./particles";
+import "../../assets/Styles/index.css";
 
 export default function Skills() {
   return (
