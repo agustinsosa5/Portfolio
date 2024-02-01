@@ -10,9 +10,7 @@ export default function section() {
           Web Developer
           <span className="punto">.</span>
         </h1>
-        <p className="p-section">
-          Ser mejor que ayer y continuar avanzando!
-        </p>
+        <p className="p-section">Ser mejor que ayer y continuar avanzando!</p>
       </div>
       <div className="container-section">
         <div className="container-photo">
@@ -25,7 +23,7 @@ export default function section() {
         <div className="section-elements">
           <h2>Agustín Sosa</h2>
           <p>
-            Mi objetivo cada día es aprender, practicar y compartir a contigo mi
+            Mi objetivo cada día es aprender, practicar y compartir contigo mi
             experiencia. Te invito a ver a mi curriculum y los proyectos en los
             que he trabajado. Puedes contactarme si lo deseas, Gracias por tu
             visita.
