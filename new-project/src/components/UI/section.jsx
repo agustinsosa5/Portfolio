@@ -15,7 +15,7 @@ export default function section() {
       <div className="container-section">
         <div className="container-photo">
           <img
-            src="./src/assets/images/Agust-foto.png"
+            src="new-project/src/assets/images/Agust-foto.png"
             alt="avatar"
             className="photo"
           />
