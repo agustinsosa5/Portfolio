@@ -35,7 +35,7 @@ app.post("/send-email", async (req, res) => {
   main().catch(console.error);
 });
 
-const PORT = process.env.PORT;
-app.listen(PORT, () => {
+const PORT = 3000
+app.listen(3000, () => {
   console.log(`Servidor escuchando en el puerto ${PORT}`);
 });
