@@ -5,11 +5,9 @@ import "../../assets/Styles/index.css";
 export default function Skills() {
   return (
     <>
-    
       <div className="container-skills" id="habilidades">
-      <Particles />
+        <Particles />
         <h2 className="tecnologia-title">Tecnologías</h2>
-
         <div className="skills-grid">
           <img src="./src/assets/icons/Boostrap.png" alt="Boostrap-icon" />
           <img src="./src/assets/icons/CSS.png" alt="css-icon" />
@@ -21,7 +19,6 @@ export default function Skills() {
           <img src="./src/assets/icons/React.png" alt="react-icon" />
           <img src="./src/assets/icons/JavaScript.png" alt="javascript-icon" />
         </div>
-      
       </div>
     </>
   );

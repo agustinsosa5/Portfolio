@@ -25,4 +25,4 @@ dist-ssr
 
 # Env files
 ./server/.env
-src/.env
+./.env

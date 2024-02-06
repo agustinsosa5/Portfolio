@@ -1,5 +1,6 @@
 .form-container {
-  background: var(--color-back);
+  background-image: url("https://avatarfiles.alphacoders.com/303/303309.jpg");  
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,10 +8,10 @@
 }
 
 .image-mail {
-  background-image: url("../images/Thankyou.jpg");
+  background-image: url("https://img.freepik.com/free-vector/thank-you-lettering_1262-6963.jpg?w=1060&t=st=1707079408~exp=1707080008~hmac=f27dbe2086ef666c6def3b5a5f9de2d066b011e3cb3b6a07169d5d2f56cd4aac");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   height: 550px;
   width: 500px;
   box-shadow: 0 0 30px var(--shadow);
@@ -27,7 +28,7 @@
   border-radius: 15px;
   height: 600px;
   width: 580px;
-  background-color: var(--color-back);
+  background-color: transparent;
   box-shadow: 0 0 30px var(--shadow);
 }
 
@@ -105,6 +106,7 @@ button {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  transition: all .5s ease;
 }
 
 button::before {
@@ -116,12 +118,15 @@ button::before {
   height: 100%;
   background-color: var(--shadow);
   transition: top 0.3s;
-  z-index: -1;
+  z-index: -1;  
 }
 
 button:hover::before {
-  top: 0px;
-  color: #fff;
+  top: 0px;  
+}
+
+button:hover {
+  color: #111; 
 }
 
 .alert {
@@ -148,6 +153,7 @@ button:hover::before {
   justify-content: center;
   align-items: center;
   font-size: large;
+  color: #111;
 }
 
 

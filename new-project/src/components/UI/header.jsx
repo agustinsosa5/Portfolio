@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header className="header">
       <a href="" className="logo">
-        Agustín.
+        AGUSTÍN.
       </a>
       <nav className={`nav ${isMenuOpen ? "nav-open" : ""}`}>
       <li className="menu-icon" onClick={toggleMenu}>
@@ -42,12 +42,7 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <ul className="ul-icons">
-        <li>
-          <a href="https://www.instagram.com/agustinsosa5/" className="icon">
-            <AiOutlineInstagram />
-          </a>
-        </li>
+      <ul className="ul-icons">     
         <li>
           <a href="https://www.linkedin.com/in/agustinsosa5/" className="icon">
             <AiFillLinkedin />

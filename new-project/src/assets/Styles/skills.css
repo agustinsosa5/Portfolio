@@ -1,5 +1,5 @@
 .container-skills {
-  text-align: center;
+  text-align: center;   
 }
 
 .skills-grid {
@@ -8,22 +8,17 @@
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  row-gap: 50px;
+  row-gap: 50px;  
 }
 
-.skills-grid img {
-  width: 100%;
-  max-width: 80px;
-  height: auto;
-  display: block;
+.skills-grid img {  
+  max-width: 100px;
+  height: auto;   
 }
 
 .tecnologia-title {
-  font-size: 8rem;
-  background: linear-gradient(to bottom, #ffffff 50%, black 50%);
-  background-clip: text;
-  color: transparent;
-  transform: translateY(-49.8%);
+  font-size: 8rem; 
+  color: #111;  
 }
 
 @media (max-width: 720px) {
@@ -34,5 +29,10 @@
   .tecnologia-title {
     font-size: 4rem;
     text-align: center;
+  }
+
+  .skills-grid img {  
+    max-width: 45%;
+    height: auto;   
   }
 }

@@ -8,7 +8,7 @@ const Particles = () => {
               value: 50, // Número de partículas
             },
             color: {
-              value: '#000', // Color de las partículas (negro en este caso)
+              value: '#4682B4', // Color de las partículas (negro en este caso)
             },
             shape: {
               type: 'circle', // Tipo de partícula (círculo)

@@ -10,12 +10,12 @@ export default function section() {
           Web Developer
           <span className="punto">.</span>
         </h1>
-        <p className="p-section">Ser mejor que ayer y continuar avanzando!</p>
+        <h2 className="subtitle-section">Antes de conseguir el éxito, debes creer que puedes hacerlo.!</h2>
       </div>
       <div className="container-section">
         <div className="container-photo">
           <img
-            src="./src/assets/images/Agust-foto.png"
+            srcSet="https://avatars.githubusercontent.com/u/110437605?s=400&u=675d3878b444221e0771678576f7a314bfc437cc&v=4"
             alt="avatar"
             className="photo"
           />
@@ -23,14 +23,11 @@ export default function section() {
         <div className="section-elements">
           <h2>Agustín Sosa</h2>
           <p>
-            Mi objetivo cada día es aprender, practicar y compartir contigo mi
-            experiencia. Te invito a ver a mi curriculum y los proyectos en los
-            que he trabajado. Puedes contactarme si lo deseas, Gracias por tu
-            visita.
+            Trabajo en el area Tecnología de la informacion desde hace varios años. En 2021 volví a la programacion y comencé a capacitarme nuevamente.          Te invito a ver a mi curriculum y los proyectos que he realizado.Puedes contactarme si lo deseas, Gracias por tu visita.
           </p>
 
           <a
-            href="./src/assets/Document/Curriculum Agustin Sosa.pdf"
+            href="./server/Document/Curriculum-Agustin-Sosa.pdf"
             target="_blank"
           >
             Ver CV

@@ -1,11 +1,11 @@
 :root {
-  --color-back: #000;
+  --color-back: #111;
   --color-nav: aliceblue;
-  --color-hover-nav: #4e9f3d;
-  --color-circle: #4e9f3d;
+  --color-hover-nav: #4682B4;
+  --color-circle: #fff;
   --color-text: #fff;
-  --color-text-sec: #4e9f3d;
-  --shadow: #4e9f3d;
+  --color-text-sec: #4682B4;
+  --shadow: #d4e2d1;
 }
 
 * {
@@ -17,8 +17,9 @@
 
 body{
   overflow-x: hidden;
+  
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  
 }
