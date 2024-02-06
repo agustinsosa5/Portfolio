@@ -7,10 +7,10 @@ require("dotenv").config();
 
 app.use(cors());
 app.use(express.json());
-app.use("/Document", express.static("./server/Document"))
+app.use("/Document", express.static("./server/Document"));
+app.use(express.static("public"));
 
-app.post("/send-email", async (req, res) => { 
-
+app.post("/send-email", async (req, res) => {
   try {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -30,13 +30,12 @@ app.post("/send-email", async (req, res) => {
     };
 
     const info = await transporter.sendMail(mailOptions);
-   
+
     res.status(200).json({ message: "Email sent successfully" });
-  } catch (error) {    
+  } catch (error) {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
