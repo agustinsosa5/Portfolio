@@ -8,6 +8,7 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 app.use("/Document", express.static("./server/Document"));
+app.use("/public", express.static("./server/icons"))
 app.use(express.static("public"));
 
 app.post("/send-email", async (req, res) => {
