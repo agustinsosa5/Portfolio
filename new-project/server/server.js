@@ -31,9 +31,9 @@ app.post("/send-email", async (req, res) => {
       text: `Nombre: ${req.body.name}\nCorreo: ${req.body.email}\nMensaje: ${req.body.message}`,
     };
 
-    const info = await transporter.sendMail(mailOptions);
-    console.log(`info del mail opcion :${info}`);
-
+    await transporter.sendMail(mailOptions);    
+  
+    
     res.status(200).json({ message: "Email sent successfully" });
   } catch (error) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -41,7 +41,6 @@ app.post("/send-email", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(process.env.SMTP_USER);
+app.listen(PORT, () => {  
   console.log(`Servidor escuchando en el puerto ${PORT}`);
 });
