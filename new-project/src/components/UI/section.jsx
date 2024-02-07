@@ -27,7 +27,7 @@ export default function section() {
           </p>
 
           <a
-            href="./server/Document/Curriculum-Agustin-Sosa.pdf"
+            href="/server/Document/Curriculum-Agustin-Sosa.pdf"
             target="_blank"
           >
             Ver CV

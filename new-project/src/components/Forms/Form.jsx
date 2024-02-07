@@ -40,12 +40,12 @@ function ContactForm() {
     }, 3000);
   };
 
-  const backend = process.env.EXPRESS_BACKEND_URL;
-  const handleSubmit = async (e) => {
+ /*  const backend = process.env.EXPRESS_BACKEND_URL; */
+  const handleSubmit = async (e) => {   
     e.preventDefault();
     showEnviando();
     try {
-      const response = await fetch(`${backend}/send-email`, {
+      const response = await fetch("https://backend-jq1g.onrender.com/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
