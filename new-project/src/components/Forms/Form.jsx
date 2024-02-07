@@ -11,7 +11,7 @@ function ContactForm() {
   });
 
   //referencia a elementos del Dom.
-  const alertMsg  = useRef(null);
+  const alertMsg = useRef(null);
   const alertMsgEnviando = useRef(null);
 
   const handleChange = (e) => {
@@ -40,11 +40,12 @@ function ContactForm() {
     }, 3000);
   };
 
+  const backend = process.env.EXPRESS_BACKEND_URL;
   const handleSubmit = async (e) => {
     e.preventDefault();
     showEnviando();
     try {
-      const response = await fetch("http://localhost:5000/send-email", {
+      const response = await fetch(`${backend}/send-email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
