@@ -11,6 +11,7 @@ app.use("/Document", express.static("./server/Document"));
 app.use(express.static("public"));
 
 app.post("/send-email", async (req, res) => {
+  console.log("Recibida solicitud POST a /send-email");
   try {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -30,6 +31,7 @@ app.post("/send-email", async (req, res) => {
     };
 
     const info = await transporter.sendMail(mailOptions);
+    console.log(`info del mail opcion :${info}`);
 
     res.status(200).json({ message: "Email sent successfully" });
   } catch (error) {
@@ -39,5 +41,6 @@ app.post("/send-email", async (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
+  console.log(process.env.SMTP_USER);
   console.log(`Servidor escuchando en el puerto ${PORT}`);
 });
