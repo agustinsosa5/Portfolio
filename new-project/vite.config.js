@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      "/send-email": "http://localhost:3000", // Ajusta el puerto si es necesario
+      "/send-email": "http://localhost:5000", // Ajusta el puerto si es necesario
     },
   },
 });

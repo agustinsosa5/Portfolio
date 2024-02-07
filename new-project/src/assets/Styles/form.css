@@ -130,7 +130,7 @@ button:hover {
 }
 
 .alert {
-  display: none;
+  display: flex;
   position: absolute;
   width: 400px;
   height: 100px;
@@ -155,6 +155,12 @@ button:hover {
   font-size: large;
   color: #111;
 }
+
+.hide{
+  display: none;
+}
+
+
 
 @media (max-width: 720px) {
   .image-mail {
