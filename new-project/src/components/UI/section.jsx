@@ -10,7 +10,7 @@ export default function section() {
           Web Developer
           <span className="punto">.</span>
         </h1>
-        <h2 className="subtitle-section">Antes de conseguir el éxito, debes creer que puedes hacerlo.!</h2>
+        <h2 className="subtitle-section">Antes de conseguir el éxito, debes creer que puedes hacerlo!</h2>
       </div>
       <div className="container-section">
         <div className="container-photo">
@@ -23,7 +23,7 @@ export default function section() {
         <div className="section-elements">
           <h2>Agustín Sosa</h2>
           <p>
-            Trabajo en el area Tecnología de la informacion desde hace varios años. En 2021 volví a la programacion y comencé a capacitarme nuevamente.          Te invito a ver a mi curriculum y los proyectos que he realizado.Puedes contactarme si lo deseas, Gracias por tu visita.
+            Trabajo en el area Tecnología de la informacion desde hace varios años. En 2021 volví a la programacion y comencé a capacitarme nuevamente. Te invito a ver a mi curriculum y los proyectos que he realizado.Puedes contactarme si lo deseas, Gracias por tu visita.
           </p>
 
           <a
