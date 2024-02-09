@@ -76,7 +76,7 @@ function ContactForm() {
       <div className="alert mensaje hide" ref={alertMsg}>
         Mensaje Enviado!
       </div>
-      <div className="alert mensaje hide" ref={alertMsgEnviando}>
+      <div className="alert mensaje enviando hide" ref={alertMsgEnviando}>
         Enviando...
       </div>
       <div className="image-mail"></div>
