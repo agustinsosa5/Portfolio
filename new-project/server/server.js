@@ -27,7 +27,7 @@ app.post("/send-email", async (req, res) => {
     const mailOptions = {
       from: `Email Cliente Portfolio: ${req.body.email}`,
       to: process.env.SMTP_USER,
-      subject: req.body.subject,
+      subject: `Asunto: ${req.body.subject}`,
       text: `Nombre: ${req.body.name}\nCorreo: ${req.body.email}\nMensaje: ${req.body.message}`,
     };
 
