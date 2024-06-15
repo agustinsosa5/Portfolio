@@ -23,7 +23,7 @@ export default function section() {
         <div className="section-elements">
           <h2>Agustín Sosa</h2>
           <p>
-            Trabajo en Tecnología de la informacion hace varios años. Tengo formacion en programacion a traves de Jovenes a programar y además de forma autodidacta. Iré creando agregando proyectos nuevos en su seccion una vez que esten finalizados. Gracias por tu visita.
+            Soy de Montevideo - Uruguay y trabajo en Tecnología de la informacion hace varios años. A través de Jovenes a programar y de forma autodidacta, pude formarme en programación. Te invito a que veas mi portfolio. Pronto iré agregando nuevos projectos en su seccion una vez que esten finalizados. Gracias por tu visita.
           </p>
 
           <a
