@@ -132,7 +132,7 @@ button:hover {
 .alert {
   display: flex;
   position: absolute;
-  width: 75%;
+  width: 20%;
   height: 100px;
   color: #fff;  
   background-color: #4682B4;
