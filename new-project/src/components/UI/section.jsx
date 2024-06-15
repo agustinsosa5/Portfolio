@@ -23,7 +23,7 @@ export default function section() {
         <div className="section-elements">
           <h2>Agustín Sosa</h2>
           <p>
-            Trabajo en el area Tecnología de la informacion desde hace varios años. En 2021 volví a la programacion y comencé a capacitarme nuevamente. Te invito a ver a mi curriculum y los proyectos que he realizado.Puedes contactarme si lo deseas, Gracias por tu visita.
+            Trabajo en Tecnología de la informacion hace varios años. Tengo formacion en programacion a traves de Jovenes a programar y además de forma autodidacta. Iré creando agregando proyectos nuevos en su seccion una vez que esten finalizados. Gracias por tu visita.
           </p>
 
           <a
