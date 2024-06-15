@@ -27,7 +27,7 @@ export default function section() {
           </p>
 
           <a
-            href={`${process.env.REACT_APP_BACKEND_URL}/Document/Curriculum-Agustin-Sosa.pdf`}
+            href={`${process.env.REACT_APP_BACKEND_URL}/Document/CV Agustin Sosa - Dev 2024.pdf`}
             target="_blank"
           >
             Ver CV
