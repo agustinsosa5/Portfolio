@@ -85,7 +85,7 @@ h2 {
 }
 .photo {
   border-radius: 50%;
-  width: 100%;
+  width: 80%;
   height: 100%;
   filter: opacity(0.8);
 }
