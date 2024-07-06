@@ -1,16 +1,22 @@
 import "../../assets/Styles/section.css";
 import "../../assets/Styles/index.css";
+import { useTranslation } from "react-i18next";
 
 export default function section() {
+
+  const { t } = useTranslation();
+
   return (
     <section className="section">
       <div className="circle"></div>
       <div className="title">
         <h1 className="title-section">
-          Web Developer
+          {t('title')}
           <span className="punto">.</span>
         </h1>
-        <h2 className="subtitle-section">Antes de conseguir el éxito, debes creer que puedes hacerlo!</h2>
+        <h2 className="subtitle-section">
+        {t('subtitle')}
+        </h2>
       </div>
       <div className="container-section">
         <div className="container-photo">
@@ -23,15 +29,12 @@ export default function section() {
         <div className="section-elements">
           <h2>Agustín Sosa</h2>
           <p>
-            Soy de Montevideo Uruguay. Trabajo en Tecnología de la información hace varios años. A través de Jovenes a programar y de forma autodidacta, pude formarme en programación. Te invito a que veas mi portfolio. Pronto iré agregando nuevos projectos en su sección una vez que esten finalizados. Gracias por tu visita.
+            {t('section.p1')}
           </p>
-
-          <a
-            href={`${process.env.REACT_APP_BACKEND_URL}/Document/CV Agustin Sosa - Dev 2024.pdf`}
-            target="_blank"
-          >
-            Ver CV
-          </a>
+          <br />
+          <p>
+          {t('section.p2')}
+          </p>
         </div>
       </div>
     </section>

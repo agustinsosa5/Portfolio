@@ -1,5 +1,6 @@
 .container-skills {
-  text-align: center;   
+  text-align: center;
+  padding-top: 100px;
 }
 
 .skills-grid {
@@ -7,32 +8,43 @@
   display: grid;
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  row-gap: 50px;  
+  gap: 5px;
+  row-gap: 30px;
 }
 
-.skills-grid img {  
-  max-width: 100px;
-  height: auto;   
+.container-img {
+  background-color: var(--color-text);
+  backdrop-filter: blur(70px);
+  width: 20%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  border-radius: 20%;
+}
+
+.skills-grid img {
+  max-width: 100%;
+  height: 100%;
 }
 
 .tecnologia-title {
-  font-size: 8rem; 
-  color: #111;  
+  font-size: 7rem;
+  color: var(--color-text);
 }
 
 @media (max-width: 720px) {
-  .container-skills{
+  .container-skills {
     max-width: 100vw;
   }
 
   .tecnologia-title {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
   }
 
-  .skills-grid img {  
-    max-width: 45%;
-    height: auto;   
+  .container-img {
+    width: 40%;
+    height: auto;
   }
 }

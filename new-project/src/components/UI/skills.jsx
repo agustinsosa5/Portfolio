@@ -1,24 +1,41 @@
 import "/src/assets/Styles/skills.css";
-import Particles from "./particles";
 import "/src/assets/Styles/index.css";
-
+import { useTranslation } from "react-i18next";
 
 export default function Skills() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="container-skills" id="habilidades">
-        <Particles />
-        <h2 className="tecnologia-title">Tecnologías</h2>
+        <h2 className="tecnologia-title">{t("technologies")}</h2>
         <div className="skills-grid">
-          <img src={`${process.env.REACT_APP_BACKEND_URL}/icons/Boostrap.png`} alt="Boostrap-icon" />
-          <img src={`${process.env.REACT_APP_BACKEND_URL}/icons/CSS.png`} alt="css-icon" />
-          <img src={`${process.env.REACT_APP_BACKEND_URL}/icons/HTML.png`} alt="html-icon" />
-          <img src={`${process.env.REACT_APP_BACKEND_URL}/icons/IBM-Cloud.png`} alt="ibm-icon" />
-          <img src={`${process.env.REACT_APP_BACKEND_URL}/icons/NodeJS.png`} alt="node-icon" />
-          <img src={`${process.env.REACT_APP_BACKEND_URL}/icons/PostgreSQL.png`} alt="posgres-icon" />
-          <img src={`${process.env.REACT_APP_BACKEND_URL}/icons/Python.png`} alt="python-icon" />
-          <img src={`${process.env.REACT_APP_BACKEND_URL}/icons/React.png`} alt="react-icon" />
-          <img src={`${process.env.REACT_APP_BACKEND_URL}/icons/JavaScript.png`} alt="javascript-icon" />
+          <div className="container-img">
+            <img src="/icons/Boostrap.png" alt="Boostrap-icon" />
+          </div>
+          <div className="container-img">
+            <img src="/icons/CSS.png" alt="css-icon" />
+          </div>
+          <div className="container-img">
+            <img src="/icons/HTML.png" alt="html-icon" />
+          </div>
+          <div className="container-img">
+            <img src="/icons/IBM-Cloud.png" alt="ibm-icon" />
+          </div>
+          <div className="container-img">
+            <img src="/icons/NodeJS.png" alt="node-icon" />
+          </div>
+          <div className="container-img">
+            <img src="/icons/PostgreSQL.png" alt="posgres-icon" />
+          </div>
+          <div className="container-img">
+            <img src="/icons/Python.png" alt="python-icon" />
+          </div>
+          <div className="container-img">
+            <img src="/icons/React.png" alt="react-icon" />
+          </div>
+          <div className="container-img">
+            <img src="/icons/JavaScript.png" alt="javascript-icon" />
+          </div>
         </div>
       </div>
     </>
