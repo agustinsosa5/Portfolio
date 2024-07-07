@@ -4,38 +4,55 @@ import { useTranslation } from "react-i18next";
 
 export default function Skills() {
   const { t } = useTranslation();
+
+  const icons = [
+    {
+      src: "/icons/Boostrap.webp",
+      alt: "Boostrap",
+    },
+    {
+      src: "/icons/CSS.webp",
+      alt: "css-icon",
+    },
+    {
+      src: "/icons/HTML.webp",
+      alt: "HTML-icon",
+    },
+    {
+      src: "/icons/Git.webp",
+      alt: "Git-icon",
+    },
+    {
+      src: "/icons/NodeJS.webp",
+      alt: "NodeJs-icon",
+    },
+    {
+      src: "/icons/MySQL.webp",
+      alt: "MySQL-icon",
+    },
+    {
+      src: "/icons/Python.webp",
+      alt: "Python-icon",
+    },
+    {
+      src: "/icons/React.webp",
+      alt: "React-icon",
+    },
+    {
+      src: "/icons/JavaScript.webp",
+      alt: "Javascript-icon",
+    },
+  ];
   return (
     <>
       <div className="container-skills" id="habilidades">
         <h2 className="tecnologia-title">{t("technologies")}</h2>
         <div className="skills-grid">
-          <div className="container-img">
-            <img src="/icons/Boostrap.webp" alt="Boostrap-icon" />
-          </div>
-          <div className="container-img">
-            <img src="/icons/CSS.webp" alt="css-icon" />
-          </div>
-          <div className="container-img">
-            <img src="/icons/HTML.webp" alt="html-icon" />
-          </div>
-          <div className="container-img">
-            <img src="/icons/IBM-Cloud.webp" alt="ibm-icon" />
-          </div>
-          <div className="container-img">
-            <img src="/icons/NodeJS.webp" alt="node-icon" />
-          </div>
-          <div className="container-img">
-            <img src="/icons/PostgreSQL.webp" alt="posgres-icon" />
-          </div>
-          <div className="container-img">
-            <img src="/icons/Python.webp" alt="python-icon" />
-          </div>
-          <div className="container-img">
-            <img src="/icons/React.webp" alt="react-icon" />
-          </div>
-          <div className="container-img">
-            <img src="/icons/JavaScript.webp" alt="javascript-icon" />
-          </div>
+          {icons.map((icon, index) => (
+            <div className="container-img" key={index}>
+              <img src={icon.src} alt={icon.alt} />
+            </div>
+          ))}
         </div>
       </div>
     </>
